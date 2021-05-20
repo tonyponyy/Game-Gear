@@ -1,0 +1,288 @@
+ /* colores */
+:root {
+   --consola: #303030;
+   --marco: #1f1f1f;
+   --botones: #141414;
+   --botones_pulsado: #080808;
+}
+
+body{
+  background-color: #80adb3;
+}
+
+#pad{
+  width: 100px;
+  height: 100px;
+   background-color: var(--botones);
+  border-radius: 120px;
+  margin-top: 83px;
+  margin-left: 13px;
+  border: 5px black solid;
+}
+
+#botonera{
+
+  margin-top: 80px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(30deg);
+  margin-left: 12px
+  
+}
+
+
+
+#marco_pantalla{
+  width: 326px;
+  height: 214px;
+  background-color: var(--marco);
+  border: 5px black solid;
+  border-radius: 10% 10% 34% 27% / 11% 10% 83% 80% ;
+  margin-top:12px;
+}
+
+#canvas{
+  border-radius: 12px;
+  border: var(--consola) 15px solid;
+  margin-left: 62px;
+  margin-top: 12px;
+
+}
+
+#botona, #botonb{
+  width: 57px;
+  height: 57px;
+   background-color: var(--botones);
+  border-radius: 60px;
+  margin: 6px;
+  border: 5px black solid;
+}
+
+
+
+#botona:active{
+  background: radial-gradient(circle, var(--botones), var(--botones_pulsado)); 
+
+}
+#botonb:active{
+   background: radial-gradient(circle, var(--botones), var(--botones_pulsado)); 
+}
+
+
+#consola{
+  background: linear-gradient(0deg, rgba(48,48,48,1) -12%, rgba(84,84,84,1) 16%, rgba(48,48,48,1) 49%);;
+  width: 544px;
+  height: 302px;
+  display: flex;
+  margin: 40px;
+  border-top-left-radius: 100% 20%;
+	border-top-right-radius: 100% 20%;
+	border-bottom-right-radius: 100% 30% ;
+	border-bottom-left-radius: 100% 30% ; 
+  border-color: black;
+  border-width: 5px;
+  border-style: solid; 
+  box-shadow: 20px -15px 0 3px rgba(0,0,0,0.3);
+}
+
+#start{
+  position: absolute;
+  left:520px;
+  top:82px;
+  font-size: smaller;
+  color:gray;
+  font-weight: bolder;
+}
+
+#altavoces{
+  position:absolute;;
+  top:253px;
+  left: 103px;
+
+}
+
+#agujeros_negros{
+    display: grid;
+   grid-template-columns: repeat(5, 0fr);
+   width: 100px;
+  height: 70px;
+}
+
+.agujero{
+  width: 4px;
+  height:4px;
+  margin-top: 1px;
+  margin-left: 13px;
+  background-color: black;
+  border-radius: 12px; 
+  
+}
+
+.agujero_gris{
+  width: 4px;
+  height:4px;
+  margin-top: 6px;
+  margin-left: 13px;
+  background-color: #1f1f1f;
+  border-radius: 12px; 
+  
+}
+
+#agujeros_gris{
+ position: absolute;
+  margin-left: -12px;
+  margin-top: 12px
+  
+}
+#agujeros_gris2{
+ position: absolute;
+  margin-left: 80px;
+  margin-top: -57px 
+}
+
+#nombrelogo{
+  margin-left:2px;
+  width: 100px;
+  height: 100px;
+  position:absolute;
+}
+
+#logo{
+  display: flex;
+}
+.gota{
+  width: 12px;
+  height: 23px;
+
+  margin-left: 1px;
+  border: 2px black solid;
+    transform: rotate(65deg);
+  border-radius: 0 100% / 0 100%;
+}
+
+#gota1{
+  background-color: red;
+}
+#gota2{
+  background-color: green;
+}
+#gota3{
+  background-color: blue;
+}
+
+#nombre{
+  font-weight: bolder;
+  color: white;
+}
+
+#nom2{
+  margin-left:9px;
+  margin-top: -7px;
+}
+
+#logoderecha{
+  top:72px;
+  left:  423px;
+  position: absolute;
+  width: 90px;
+  height: 100px;
+}
+#logosega{
+  color: white;
+  font-size:large;
+  margin-left: 6px
+}
+#portable{
+  color:aquamarine;
+    font-size:8px;
+  margin-left: 6px
+}
+#semic{
+  position: absolute;
+  background-color: blue;
+  width: 50px;
+  height: 20px;
+       -moz-border-radius: 100px 100px 0 0;
+     -webkit-border-radius: 100px 100px 0 0;
+     border-radius: 100px 100px 0 0;
+  border: 5px black solid;
+  left: 470px;
+  transform: rotate(95deg);
+  top:90px
+  
+}
+
+#semic:active{
+background-color: #0000b8;
+}
+
+.flecha{
+  position: absolute;
+  clip-path: polygon(0% 20%, 60% 20%, 60% 20%, 100% 50%, 60% 79%, 59% 79%, 0% 80%);
+  width: 48px;
+  height: 50px;
+  background-color:var(--botones_pulsado) ;
+
+     
+}
+
+.flecha:active{
+   background-color: blue;
+   background-image: linear-gradient(to right, var(--botones_pulsado) , black);
+}
+
+
+#flecha1{
+  top:157px;
+  left:68px;  
+}
+#flecha2{
+  transform: rotate(90deg);
+  top:130px;
+  left: 92px;
+}
+#flecha3{
+  transform: rotate(180deg);
+  top:157px;
+  left:117px;  
+}
+
+#flecha4{
+  transform: rotate(270deg);
+  left: 92px;
+  top:185px;
+}
+
+#linea{
+  position: absolute;
+  width: 75px;
+    height:3px;
+  background-color: gray;
+  left: 470px;
+  top:135px;
+  transform: rotate(-60deg);
+}
+
+#\31 {
+  position: absolute;
+  left: 493px;
+  top:169px;
+  transform: rotate(-60deg);
+  color: gray;
+  font-weight: bolder;
+}
+
+#\32 {
+  position: absolute;
+  left: 534px;
+  top:99px;
+  transform: rotate(-60deg);
+  color: gray;
+  font-weight: bolder;
+}
+
+#puntos{
+  font-family: Verdana;
+  font-size: xx-large;
+  margin-left: 152px;
+}
